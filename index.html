@@ -2,23 +2,34 @@
 layout: default
 ---
 
-<div class="header-bar">
-  <h1>*folio</h1>
-  <h2>simple whitespace theme</h2>
-  <br/>
-  <hr>
-  <br/>
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Monica King</h1>
+    <h5 class="post-description">Researching p</h5>
+  </header>
+
+  <article class="post-content">
+  <img class="col one right" src="/img/prof_pic.jpg">
+
+<br/>
+<p>Write your biography here. Tell the world about yourself. Link to your favorite <a href="http://reddit.com" target="blank">subreddit</a>. You can put a picture in, too. The code is already in, just name your picture "prof_pic.jpg" and put it in the img folder. </p>
+
+<p>Link to your social media connections, too. This theme is set up to use <a href="http://fortawesome.github.io/Font-Awesome/" target="blank">Font Awesome icons</a>, like the ones below. Add your facebook, twitter, linkedin, or just disable all of them. </p>
+
+
+<br/>
+<hr/>
+<br/>
+<span class="contacticon center">
+  <a href="mailto:himonicaking@gmail.com"><i class="fa fa-envelope-square"></i></a>
+  <a href="bit.ly/monicalinkedin" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+  <a href="https://twitter.com/himonicaking" target="_blank"><i class="fa fa-twitter-square"></i></a>
+  <a href="https://github.com/monicaaa" target="_blank"><i class="fa fa-github-square"></i></a>
+</span>
+
+
+  </article>
+
 </div>
-
-
-<ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-        <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
-        <p>{{ post.description }}</p>
-        <br/>
-        <hr/>
-      </li>
-    {% endfor %}
-</ul>
