@@ -12,15 +12,12 @@ gems: [jekyll-paginate]
 # Build settings
 markdown: kramdown
 
-# Pagination
-paginate: 15
-paginate_path: "/blog/page:num/"
 
 
 collections:
-  portfolio:
+  projects:
     output: true
-    permalink: /portfolio/:path/
+    permalink: /projects/:path/
 
 
 
